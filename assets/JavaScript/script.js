@@ -54,44 +54,17 @@ $('.partner-slider').slick({
   autoplaySpeed: 300,
 });
 
-//jssor slider
-jssor_1_slider_init = function() {
+//scroll to top icon
 
-  var jssor_1_options = {
-    $AutoPlay: 1,
-    $Idle: 0,
-    $SlideDuration: 5000,
-    $SlideEasing: $Jease$.$Linear,
-    $PauseOnHover: 4,
-    $SlideWidth: 140,
-    $Align: 0
-  };
-
-  var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
-
-  /*#region responsive code begin*/
-
-  var MAX_WIDTH = 980;
-
-  function ScaleSlider() {
-      var containerElement = jssor_1_slider.$Elmt.parentNode;
-      var containerWidth = containerElement.clientWidth;
-
-      if (containerWidth) {
-
-          var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
-
-          jssor_1_slider.$ScaleWidth(expectedWidth);
-      }
-      else {
-          window.setTimeout(ScaleSlider, 30);
-      }
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 100) {
+      $('.page-scroll-top').fadeIn();
+  } else {
+      $('.page-scroll-top').fadeOut();
   }
+});
+$('.page-scroll-top').click(function() {
+  document.documentElement.scrollTop = 0;
+});
 
-  ScaleSlider();
 
-  $Jssor$.$AddEvent(window, "load", ScaleSlider);
-  $Jssor$.$AddEvent(window, "resize", ScaleSlider);
-  $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
-  /*#endregion responsive code end*/
-};
