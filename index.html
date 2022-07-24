@@ -22,36 +22,66 @@
     <div id="esw-index-wrap">
 
         <section class="brand-nav-wrap">
-            <div class="container p-0">
-                <nav class="navbar">
-                    <div class="logo-wrap">
-                        <a href="index.html">
-                            <img src="assets/images/logo/esewa_logo.png" alt="eSewa" class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="search-input-wrap position-relative">
-                        <input class="nav-search-input form-control" type="text"
-                            placeholder="Search services/merchant by tags (e.g.adsl)">
-                    </div>
-                    <form class="user-login-wrap" action="submit" method="post">
-                        <div class="id-wrap position-relative">
-                            <input type="text" class="e-number me-1" placeholder="eSewa ID" required>
-                        </div>
-                        <div class="pw-wrap position-relative">
-                            <input type="password" class="e-password me-1" placeholder="Password" required>
-                            <div class="fpw-wrap">
-                                <a href="#" class="forget-pw d-flex">Forgot Password?</a>
+            <form action="submit" method="post">
+
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2">
+                            <div class="logo-wrap">
+                                <a href="index.html">
+                                    <img src="assets/images/logo/esewa_logo.png" alt="eSewa" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="login-toggle">
+                                <button class="login-toggle-btn" type="submit">Login</button>
                             </div>
                         </div>
-                        <div class="login-btn-wrap">
-                            <button class="login-btn me-1">Login</button>
+                        <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                            <div class="search-input-wrap position-relative p-0">
+                                <input class="nav-search-input form-control" type="text"
+                                    placeholder="Search services/merchant by tags (e.g.adsl)">
+                            </div>
                         </div>
-                        <div class="register-btn-wrap">
-                            <button class="register-btn">Register</button>
+                        <div class="col-sm-7 col-md-7 col-lg-7 col-xl-7">
+                            <div class="user-login-wrap">
+                                <div class="row">
+                                    <div class="col-md-4 col-lg-4 col-xl-4 p-0">
+                                        <div class="id-wrap mbc position-relative">
+                                            <input type="text" class="e-number me-1" placeholder="eSewa ID" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4 col-xl-4 p-0">
+                                        <div class="pw-wrap mbc position-relative">
+                                            <input type="password" class="e-password me-1" placeholder="Password"
+                                                required>
+                                            <div class="fpw-wrap">
+                                                <a href="#" class="forget-pw d-flex">Forgot Password?</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4 col-xl-4 p-0">
+                                        <div class="login-container mbc">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="login-btn-wrap">
+                                                        <button class="login-btn me-1">Login</button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="register-btn-wrap">
+                                                        <button class="register-btn">Register</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </form>
-                </nav>
-            </div>
+                    </div>
+                </div>
+            </form>
         </section>
 
         <section class="sec-navbar-wrap mb-3">
@@ -70,11 +100,20 @@
             </div>
         </section>
 
+
+
         <section class="banner-loader-wrap">
             <div class="container p-0">
                 <div class="row">
-                    <div class="col-3">
-                        <div class="side-loader">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                        <div class="banner-menu">
+                            <div class="banner-menu-title d-inline">Payment Menu</div>
+                            <button class="banner-menu-btn d-inline float-end" id="menu-collapse-btn" onclick="myFunction()">
+                                <span><i class="fa fa-bars" aria-hidden="true"></i></span>
+                            </button>
+                           
+                        </div>
+                        <div class="side-loader" id="menu-collapse">
                             <ul class="side-loader-content p-0">
                                 <li class="side-loader-item">
                                     <a href="#" class="side-loader-link">Topup & Recharge</a>
@@ -103,9 +142,9 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-9">
+                    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12">
                         <div class="banner-content">
-
+                            
                             <div class="banner-slider">
                                 <div class="banner-items">
                                     <a href="#">
@@ -162,14 +201,16 @@
         </section>
 
         <section class="toll-free-wrap">
-            <div class="toll-free-btn">
-                <span><i class="fa fa-phone" aria-hidden="true"></i></span>
-            </div>
-            <div class="toll-free-num">
-                <h6>Toll Free Number</h6>
-                <ul class="p-0">
-                    <li>1660-01-02121</li>
-                </ul>
+            <div class="container-fluid">
+                <div class="toll-free-btn">
+                    <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                </div>
+                <div class="toll-free-num">
+                    <h6>Toll Free Number</h6>
+                    <ul class="p-0">
+                        <li>1660-01-02121</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
@@ -210,8 +251,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/popular-services/internationalflight.png" class="img-fluid"
-                                                        alt="flight ticket">
+                                                    <img src="assets/images/logo/popular-services/internationalflight.png"
+                                                        class="img-fluid" alt="flight ticket">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -224,8 +265,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/popular-services/yeti.png" class="img-fluid"
-                                                        alt="yeti">
+                                                    <img src="assets/images/logo/popular-services/yeti.png"
+                                                        class="img-fluid" alt="yeti">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -238,8 +279,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/popular-services/britishcouncil.png" class="img-fluid"
-                                                        alt="british council">
+                                                    <img src="assets/images/logo/popular-services/britishcouncil.png"
+                                                        class="img-fluid" alt="british council">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -252,8 +293,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/popular-services/daraz.png" class="img-fluid"
-                                                        alt="daraz">
+                                                    <img src="assets/images/logo/popular-services/daraz.png"
+                                                        class="img-fluid" alt="daraz">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -266,8 +307,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/popular-services/meroshare.png" class="img-fluid"
-                                                        alt="meroshare">
+                                                    <img src="assets/images/logo/popular-services/meroshare.png"
+                                                        class="img-fluid" alt="meroshare">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -280,8 +321,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/popular-services/name.png" class="img-fluid"
-                                                        alt="name">
+                                                    <img src="assets/images/logo/popular-services/name.png"
+                                                        class="img-fluid" alt="name">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -294,8 +335,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/popular-services/agriculturalbank.png" class="img-fluid"
-                                                        alt="agricultural bank">
+                                                    <img src="assets/images/logo/popular-services/agriculturalbank.png"
+                                                        class="img-fluid" alt="agricultural bank">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -308,8 +349,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/popular-services/rastrabank.png" class="img-fluid"
-                                                        alt="rastra bank">
+                                                    <img src="assets/images/logo/popular-services/rastrabank.png"
+                                                        class="img-fluid" alt="rastra bank">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -322,8 +363,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/popular-services/providendfund.png" class="img-fluid"
-                                                        alt="provident fund">
+                                                    <img src="assets/images/logo/popular-services/providendfund.png"
+                                                        class="img-fluid" alt="provident fund">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -336,8 +377,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/popular-services/nec.png" class="img-fluid"
-                                                        alt="NEC">
+                                                    <img src="assets/images/logo/popular-services/nec.png"
+                                                        class="img-fluid" alt="NEC">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -350,8 +391,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/popular-services/tdo.png" class="img-fluid"
-                                                        alt="tdo">
+                                                    <img src="assets/images/logo/popular-services/tdo.png"
+                                                        class="img-fluid" alt="tdo">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -364,8 +405,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/popular-services/schartedbank.png" class="img-fluid"
-                                                        alt="SCB">
+                                                    <img src="assets/images/logo/popular-services/schartedbank.png"
+                                                        class="img-fluid" alt="SCB">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -403,8 +444,8 @@
                                             <div class="offer-tag"> 2% Cashback, Promo Code: DISH </div>
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/new-services/dishhome.png" class="img-fluid"
-                                                        alt="dish yearly offer">
+                                                    <img src="assets/images/logo/new-services/dishhome.png"
+                                                        class="img-fluid" alt="dish yearly offer">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -417,12 +458,13 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/new-services/purbanchal.png" class="img-fluid"
-                                                        alt="purbanchal">
+                                                    <img src="assets/images/logo/new-services/purbanchal.png"
+                                                        class="img-fluid" alt="purbanchal">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
-                                                <h5 class="caption-txt">Purbanchal University Faculty of Science and Technology</h5>
+                                                <h5 class="caption-txt">Purbanchal University Faculty of Science and
+                                                    Technology</h5>
                                             </figcaption>
                                             <button class="btn btn-view-details">View Details</button>
                                         </figure>
@@ -431,8 +473,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/new-services/ticketoncall.png" class="img-fluid"
-                                                        alt="ticket on call">
+                                                    <img src="assets/images/logo/new-services/ticketoncall.png"
+                                                        class="img-fluid" alt="ticket on call">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -459,8 +501,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/new-services/refernearn.png" class="img-fluid"
-                                                        alt="refer and earn">
+                                                    <img src="assets/images/logo/new-services/refernearn.png"
+                                                        class="img-fluid" alt="refer and earn">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -473,8 +515,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/new-services/ielts.png" class="img-fluid"
-                                                        alt="ielts">
+                                                    <img src="assets/images/logo/new-services/ielts.png"
+                                                        class="img-fluid" alt="ielts">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -487,8 +529,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/new-services/tootle.png" class="img-fluid"
-                                                        alt="tootle">
+                                                    <img src="assets/images/logo/new-services/tootle.png"
+                                                        class="img-fluid" alt="tootle">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -502,8 +544,8 @@
                                             <div class="offer-tag"> 15% Cashback </div>
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/new-services/samsung.png" class="img-fluid"
-                                                        alt="samsung">
+                                                    <img src="assets/images/logo/new-services/samsung.png"
+                                                        class="img-fluid" alt="samsung">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -541,12 +583,13 @@
                                             <div class="offer-tag"> 50% Off </div>
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/see-scholarship/triton.png" class="img-fluid"
-                                                        alt="triton">
+                                                    <img src="assets/images/logo/see-scholarship/triton.png"
+                                                        class="img-fluid" alt="triton">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
-                                                <h5 class="caption-txt">Trition International College - SEE, Kathmandu</h5>
+                                                <h5 class="caption-txt">Trition International College - SEE, Kathmandu
+                                                </h5>
                                             </figcaption>
                                             <button class="btn btn-view-details">View Details</button>
                                         </figure>
@@ -556,8 +599,8 @@
                                             <div class="offer-tag"> 50% Off for 100 Students </div>
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/see-scholarship/texas.png" class="img-fluid"
-                                                        alt="texas">
+                                                    <img src="assets/images/logo/see-scholarship/texas.png"
+                                                        class="img-fluid" alt="texas">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -571,8 +614,8 @@
                                             <div class="offer-tag"> 75% Off </div>
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/see-scholarship/lalitpurnist.png" class="img-fluid"
-                                                        alt="lalitpur nist">
+                                                    <img src="assets/images/logo/see-scholarship/lalitpurnist.png"
+                                                        class="img-fluid" alt="lalitpur nist">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -586,8 +629,8 @@
                                             <div class="offer-tag"> 100% Off for 2 Students </div>
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/see-scholarship/liverpool.jfif" class="img-fluid"
-                                                        alt="Liverpool">
+                                                    <img src="assets/images/logo/see-scholarship/liverpool.jfif"
+                                                        class="img-fluid" alt="Liverpool">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -601,12 +644,13 @@
                                             <div class="offer-tag"> 100% Off </div>
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/see-scholarship/chelsea.png" class="img-fluid"
-                                                        alt="chelsea">
+                                                    <img src="assets/images/logo/see-scholarship/chelsea.png"
+                                                        class="img-fluid" alt="chelsea">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
-                                                <h5 class="caption-txt">Chelsea International Academy, New Baneshwor</h5>
+                                                <h5 class="caption-txt">Chelsea International Academy, New Baneshwor
+                                                </h5>
                                             </figcaption>
                                             <button class="btn btn-view-details">View Details</button>
                                         </figure>
@@ -616,8 +660,8 @@
                                             <div class="offer-tag"> 5% Off </div>
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/see-scholarship/bhanubhakta.png" class="img-fluid"
-                                                        alt="bhanubhakta college">
+                                                    <img src="assets/images/logo/see-scholarship/bhanubhakta.png"
+                                                        class="img-fluid" alt="bhanubhakta college">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -631,8 +675,8 @@
                                             <div class="offer-tag"> 35%-50% Off </div>
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/see-scholarship/xavierintl.png" class="img-fluid"
-                                                        alt="xavier">
+                                                    <img src="assets/images/logo/see-scholarship/xavierintl.png"
+                                                        class="img-fluid" alt="xavier">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -646,8 +690,8 @@
                                             <div class="offer-tag"> Upto 100% </div>
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/see-scholarship/omegaintl.png" class="img-fluid"
-                                                        alt="omega">
+                                                    <img src="assets/images/logo/see-scholarship/omegaintl.png"
+                                                        class="img-fluid" alt="omega">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -661,8 +705,8 @@
                                             <div class="offer-tag"> 20% Off </div>
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/see-scholarship/swarnim.png" class="img-fluid"
-                                                        alt="swarnim sagarmatha">
+                                                    <img src="assets/images/logo/see-scholarship/swarnim.png"
+                                                        class="img-fluid" alt="swarnim sagarmatha">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -676,8 +720,8 @@
                                             <div class="offer-tag"> 50% off on Annual Fee </div>
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/see-scholarship/cambridge.png" class="img-fluid"
-                                                        alt="cambridge">
+                                                    <img src="assets/images/logo/see-scholarship/cambridge.png"
+                                                        class="img-fluid" alt="cambridge">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -714,8 +758,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/government-pay/nepali.png" class="img-fluid"
-                                                        alt="bluebook renewal">
+                                                    <img src="assets/images/logo/government-pay/nepali.png"
+                                                        class="img-fluid" alt="bluebook renewal">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -728,8 +772,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/government-pay/nepali.png" class="img-fluid"
-                                                        alt="tpfp">
+                                                    <img src="assets/images/logo/government-pay/nepali.png"
+                                                        class="img-fluid" alt="tpfp">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -742,8 +786,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/government-pay/healthinsurance.png" class="img-fluid"
-                                                        alt="hib">
+                                                    <img src="assets/images/logo/government-pay/healthinsurance.png"
+                                                        class="img-fluid" alt="hib">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -756,8 +800,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/government-pay/nepali.png" class="img-fluid"
-                                                        alt="rmis">
+                                                    <img src="assets/images/logo/government-pay/nepali.png"
+                                                        class="img-fluid" alt="rmis">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -770,8 +814,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/government-pay/nepali.png" class="img-fluid"
-                                                        alt="tsc">
+                                                    <img src="assets/images/logo/government-pay/nepali.png"
+                                                        class="img-fluid" alt="tsc">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -784,12 +828,13 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/government-pay/nepali.png" class="img-fluid"
-                                                        alt="dcsap">
+                                                    <img src="assets/images/logo/government-pay/nepali.png"
+                                                        class="img-fluid" alt="dcsap">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
-                                                <h5 class="caption-txt">Department of Consular Services Attestation Payment</h5>
+                                                <h5 class="caption-txt">Department of Consular Services Attestation
+                                                    Payment</h5>
                                             </figcaption>
                                             <button class="btn btn-view-details">View Details</button>
                                         </figure>
@@ -798,8 +843,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/government-pay/nepali.png" class="img-fluid"
-                                                        alt="dib">
+                                                    <img src="assets/images/logo/government-pay/nepali.png"
+                                                        class="img-fluid" alt="dib">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -812,8 +857,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/government-pay/nepali.png" class="img-fluid"
-                                                        alt="pp payment">
+                                                    <img src="assets/images/logo/government-pay/nepali.png"
+                                                        class="img-fluid" alt="pp payment">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -826,8 +871,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/government-pay/nepali.png" class="img-fluid"
-                                                        alt="lgp">
+                                                    <img src="assets/images/logo/government-pay/nepali.png"
+                                                        class="img-fluid" alt="lgp">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -840,8 +885,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/government-pay/nepali.png" class="img-fluid"
-                                                        alt="Nol">
+                                                    <img src="assets/images/logo/government-pay/nepali.png"
+                                                        class="img-fluid" alt="Nol">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -854,8 +899,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/government-pay/nepali.png" class="img-fluid"
-                                                        alt="mksd">
+                                                    <img src="assets/images/logo/government-pay/nepali.png"
+                                                        class="img-fluid" alt="mksd">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -868,8 +913,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/government-pay/nepali.png" class="img-fluid"
-                                                        alt="feti">
+                                                    <img src="assets/images/logo/government-pay/nepali.png"
+                                                        class="img-fluid" alt="feti">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -882,8 +927,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/government-pay/citizenpension.png" class="img-fluid"
-                                                        alt="cps">
+                                                    <img src="assets/images/logo/government-pay/citizenpension.png"
+                                                        class="img-fluid" alt="cps">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -896,8 +941,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/government-pay/nepali.png" class="img-fluid"
-                                                        alt="fewf">
+                                                    <img src="assets/images/logo/government-pay/nepali.png"
+                                                        class="img-fluid" alt="fewf">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -910,8 +955,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/government-pay/nepali.png" class="img-fluid"
-                                                        alt="ird">
+                                                    <img src="assets/images/logo/government-pay/nepali.png"
+                                                        class="img-fluid" alt="ird">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -924,8 +969,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/government-pay/ssf.jfif" class="img-fluid"
-                                                        alt="ssf">
+                                                    <img src="assets/images/logo/government-pay/ssf.jfif"
+                                                        class="img-fluid" alt="ssf">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -962,8 +1007,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/utility-bill-payment/nea.png" class="img-fluid"
-                                                        alt="NEA">
+                                                    <img src="assets/images/logo/utility-bill-payment/nea.png"
+                                                        class="img-fluid" alt="NEA">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -976,8 +1021,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/utility-bill-payment/kukl.png" class="img-fluid"
-                                                        alt="kukl">
+                                                    <img src="assets/images/logo/utility-bill-payment/kukl.png"
+                                                        class="img-fluid" alt="kukl">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -990,8 +1035,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/utility-bill-payment/khanepani.png" class="img-fluid"
-                                                        alt="khanepani">
+                                                    <img src="assets/images/logo/utility-bill-payment/khanepani.png"
+                                                        class="img-fluid" alt="khanepani">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -1004,8 +1049,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/utility-bill-payment/butwanpower.png" class="img-fluid"
-                                                        alt="bpc">
+                                                    <img src="assets/images/logo/utility-bill-payment/butwanpower.png"
+                                                        class="img-fluid" alt="bpc">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -1018,8 +1063,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/utility-bill-payment/ghampower.png" class="img-fluid"
-                                                        alt="gham">
+                                                    <img src="assets/images/logo/utility-bill-payment/ghampower.png"
+                                                        class="img-fluid" alt="gham">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -1032,8 +1077,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/utility-bill-payment/cbe.png" class="img-fluid"
-                                                        alt="cbe">
+                                                    <img src="assets/images/logo/utility-bill-payment/cbe.png"
+                                                        class="img-fluid" alt="cbe">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -1070,8 +1115,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/insurance/buylife.png" class="img-fluid"
-                                                        alt="life insurance">
+                                                    <img src="assets/images/logo/insurance/buylife.png"
+                                                        class="img-fluid" alt="life insurance">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -1100,8 +1145,8 @@
                                             <div class="offer-tag"> Rs.50/- Cashback </div>
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/insurance/thirdparty.png" class="img-fluid"
-                                                        alt="third party insurance">
+                                                    <img src="assets/images/logo/insurance/thirdparty.png"
+                                                        class="img-fluid" alt="third party insurance">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -1115,8 +1160,8 @@
                                             <div class="offer-tag"> Upto Rs.1000 Cashback </div>
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/insurance/jyotilife.png" class="img-fluid"
-                                                        alt="jyoti life">
+                                                    <img src="assets/images/logo/insurance/jyotilife.png"
+                                                        class="img-fluid" alt="jyoti life">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -1130,8 +1175,8 @@
                                             <div class="offer-tag"> Upto Rs.1000 Cashback </div>
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/insurance/nepallife.png" class="img-fluid"
-                                                        alt="nepal life">
+                                                    <img src="assets/images/logo/insurance/nepallife.png"
+                                                        class="img-fluid" alt="nepal life">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -1145,8 +1190,8 @@
                                             <div class="offer-tag"> Upto Rs.1000 Cashback </div>
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/insurance/american.png" class="img-fluid"
-                                                        alt="amrican life">
+                                                    <img src="assets/images/logo/insurance/american.png"
+                                                        class="img-fluid" alt="amrican life">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -1198,8 +1243,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/stock-broker-payment/arun.png" class="img-fluid"
-                                                        alt="arun securities">
+                                                    <img src="assets/images/logo/stock-broker-payment/arun.png"
+                                                        class="img-fluid" alt="arun securities">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -1212,8 +1257,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/stock-broker-payment/agarwal.png" class="img-fluid"
-                                                        alt="agarwal securities">
+                                                    <img src="assets/images/logo/stock-broker-payment/agarwal.png"
+                                                        class="img-fluid" alt="agarwal securities">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -1226,12 +1271,13 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/stock-broker-payment/market.png" class="img-fluid"
-                                                        alt="market securities">
+                                                    <img src="assets/images/logo/stock-broker-payment/market.png"
+                                                        class="img-fluid" alt="market securities">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
-                                                <h5 class="caption-txt">Market Securities Exchange Company Pvt. Ltd.</h5>
+                                                <h5 class="caption-txt">Market Securities Exchange Company Pvt. Ltd.
+                                                </h5>
                                             </figcaption>
                                             <button class="btn btn-view-details">View Details</button>
                                         </figure>
@@ -1240,8 +1286,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/stock-broker-payment/jf.png" class="img-fluid"
-                                                        alt="jf securities">
+                                                    <img src="assets/images/logo/stock-broker-payment/jf.png"
+                                                        class="img-fluid" alt="jf securities">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -1254,8 +1300,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/stock-broker-payment/aashutosh.png" class="img-fluid"
-                                                        alt="aashutosh brokerage">
+                                                    <img src="assets/images/logo/stock-broker-payment/aashutosh.png"
+                                                        class="img-fluid" alt="aashutosh brokerage">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -1268,8 +1314,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/stock-broker-payment/thrive.png" class="img-fluid"
-                                                        alt="thrive brokerage">
+                                                    <img src="assets/images/logo/stock-broker-payment/thrive.png"
+                                                        class="img-fluid" alt="thrive brokerage">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -1282,8 +1328,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/stock-broker-payment/nepalstockhouse.png" class="img-fluid"
-                                                        alt="nepal stock house">
+                                                    <img src="assets/images/logo/stock-broker-payment/nepalstockhouse.png"
+                                                        class="img-fluid" alt="nepal stock house">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -1296,8 +1342,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/stock-broker-payment/primo.png" class="img-fluid"
-                                                        alt="primo securities">
+                                                    <img src="assets/images/logo/stock-broker-payment/primo.png"
+                                                        class="img-fluid" alt="primo securities">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -1432,8 +1478,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Health/omhospital.png" class="img-fluid"
-                                                        alt="omhospital">
+                                                    <img src="assets/images/logo/Health/omhospital.png"
+                                                        class="img-fluid" alt="omhospital">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -1470,8 +1516,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Internet-bill-payment/worldlink.png" class="img-fluid"
-                                                        alt="worldlink">
+                                                    <img src="assets/images/logo/Internet-bill-payment/worldlink.png"
+                                                        class="img-fluid" alt="worldlink">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -1484,8 +1530,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Internet-bill-payment/subisu.png" class="img-fluid"
-                                                        alt="subisu">
+                                                    <img src="assets/images/logo/Internet-bill-payment/subisu.png"
+                                                        class="img-fluid" alt="subisu">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -1498,8 +1544,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Internet-bill-payment/vianet.png" class="img-fluid"
-                                                        alt="vianet">
+                                                    <img src="assets/images/logo/Internet-bill-payment/vianet.png"
+                                                        class="img-fluid" alt="vianet">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -1512,8 +1558,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Internet-bill-payment/cgnet.png" class="img-fluid"
-                                                        alt="cg">
+                                                    <img src="assets/images/logo/Internet-bill-payment/cgnet.png"
+                                                        class="img-fluid" alt="cg">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -1526,8 +1572,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Internet-bill-payment/techmings.png" class="img-fluid"
-                                                        alt="Techminds">
+                                                    <img src="assets/images/logo/Internet-bill-payment/techmings.png"
+                                                        class="img-fluid" alt="Techminds">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -1540,8 +1586,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Internet-bill-payment/classictech.png" class="img-fluid"
-                                                        alt="Classic Tech">
+                                                    <img src="assets/images/logo/Internet-bill-payment/classictech.png"
+                                                        class="img-fluid" alt="Classic Tech">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -1554,8 +1600,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Internet-bill-payment/websurfer.png" class="img-fluid"
-                                                        alt="websurfer">
+                                                    <img src="assets/images/logo/Internet-bill-payment/websurfer.png"
+                                                        class="img-fluid" alt="websurfer">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -1568,8 +1614,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Internet-bill-payment/dhfibernet.png" class="img-fluid"
-                                                        alt="DishHome">
+                                                    <img src="assets/images/logo/Internet-bill-payment/dhfibernet.png"
+                                                        class="img-fluid" alt="DishHome">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -1582,8 +1628,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Internet-bill-payment/ntftth.png" class="img-fluid"
-                                                        alt="nt ftth">
+                                                    <img src="assets/images/logo/Internet-bill-payment/ntftth.png"
+                                                        class="img-fluid" alt="nt ftth">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -1596,8 +1642,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Internet-bill-payment/ntwimax.png" class="img-fluid"
-                                                        alt="nt wimax">
+                                                    <img src="assets/images/logo/Internet-bill-payment/ntwimax.png"
+                                                        class="img-fluid" alt="nt wimax">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -1718,8 +1764,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Movies/gopikrishna.png" class="img-fluid"
-                                                        alt="Gopi Krishna">
+                                                    <img src="assets/images/logo/Movies/gopikrishna.png"
+                                                        class="img-fluid" alt="Gopi Krishna">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -1732,8 +1778,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Movies/kirtipurcineplex.png" class="img-fluid"
-                                                        alt="Kirtipur Cineplex">
+                                                    <img src="assets/images/logo/Movies/kirtipurcineplex.png"
+                                                        class="img-fluid" alt="Kirtipur Cineplex">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -1746,8 +1792,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Movies/Ranjanacineplex.png" class="img-fluid"
-                                                        alt="Ranjana Cineplex">
+                                                    <img src="assets/images/logo/Movies/Ranjanacineplex.png"
+                                                        class="img-fluid" alt="Ranjana Cineplex">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -1785,8 +1831,8 @@
                                             <div class="offer-tag"> 10% Cashback </div>
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Antivirus/kaspersky.png" class="img-fluid"
-                                                        alt="kaspersky">
+                                                    <img src="assets/images/logo/Antivirus/kaspersky.png"
+                                                        class="img-fluid" alt="kaspersky">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -1815,8 +1861,8 @@
                                             <div class="offer-tag"> 10% Cashback </div>
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Antivirus/bitdefender.png" class="img-fluid"
-                                                        alt="bitdefender">
+                                                    <img src="assets/images/logo/Antivirus/bitdefender.png"
+                                                        class="img-fluid" alt="bitdefender">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -1860,8 +1906,8 @@
                                             <div class="offer-tag"> 10% Cashback </div>
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Antivirus/wardwiz.png" class="img-fluid"
-                                                        alt="Wardwiz">
+                                                    <img src="assets/images/logo/Antivirus/wardwiz.png"
+                                                        class="img-fluid" alt="Wardwiz">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -1875,8 +1921,8 @@
                                             <div class="offer-tag"> 10% Cashback </div>
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Antivirus/msecurity.png" class="img-fluid"
-                                                        alt="MSecurity">
+                                                    <img src="assets/images/logo/Antivirus/msecurity.png"
+                                                        class="img-fluid" alt="MSecurity">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -1928,8 +1974,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Online-shopping/sastodeal.png" class="img-fluid"
-                                                        alt="sastodeal">
+                                                    <img src="assets/images/logo/Online-shopping/sastodeal.png"
+                                                        class="img-fluid" alt="sastodeal">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -1942,8 +1988,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Online-shopping/gyapu.png" class="img-fluid"
-                                                        alt="gyapu">
+                                                    <img src="assets/images/logo/Online-shopping/gyapu.png"
+                                                        class="img-fluid" alt="gyapu">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -1956,8 +2002,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Online-shopping/nepalbuying.png" class="img-fluid"
-                                                        alt="nepalbuying">
+                                                    <img src="assets/images/logo/Online-shopping/nepalbuying.png"
+                                                        class="img-fluid" alt="nepalbuying">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -1970,8 +2016,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Online-shopping/sonyliv.png" class="img-fluid"
-                                                        alt="Sonyliv">
+                                                    <img src="assets/images/logo/Online-shopping/sonyliv.png"
+                                                        class="img-fluid" alt="Sonyliv">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -1984,8 +2030,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Online-shopping/amayra.png" class="img-fluid"
-                                                        alt="aamayra">
+                                                    <img src="assets/images/logo/Online-shopping/amayra.png"
+                                                        class="img-fluid" alt="aamayra">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -1998,8 +2044,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Online-shopping/beautyscents.png" class="img-fluid"
-                                                        alt="beautyscents">
+                                                    <img src="assets/images/logo/Online-shopping/beautyscents.png"
+                                                        class="img-fluid" alt="beautyscents">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -2012,8 +2058,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Online-shopping/navigate.png" class="img-fluid"
-                                                        alt="navigatecloth">
+                                                    <img src="assets/images/logo/Online-shopping/navigate.png"
+                                                        class="img-fluid" alt="navigatecloth">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -2026,8 +2072,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Online-shopping/washmandu.png" class="img-fluid"
-                                                        alt="Washmandu">
+                                                    <img src="assets/images/logo/Online-shopping/washmandu.png"
+                                                        class="img-fluid" alt="Washmandu">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -2040,8 +2086,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Online-shopping/jeevee.png" class="img-fluid"
-                                                        alt="jeevee">
+                                                    <img src="assets/images/logo/Online-shopping/jeevee.png"
+                                                        class="img-fluid" alt="jeevee">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -2054,8 +2100,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Online-shopping/nagmani.png" class="img-fluid"
-                                                        alt="nagmadi">
+                                                    <img src="assets/images/logo/Online-shopping/nagmani.png"
+                                                        class="img-fluid" alt="nagmadi">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -2068,8 +2114,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Online-shopping/labels.png" class="img-fluid"
-                                                        alt="labels">
+                                                    <img src="assets/images/logo/Online-shopping/labels.png"
+                                                        class="img-fluid" alt="labels">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -2082,8 +2128,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Online-shopping/e.png" class="img-fluid"
-                                                        alt="sherpa outdoors">
+                                                    <img src="assets/images/logo/Online-shopping/e.png"
+                                                        class="img-fluid" alt="sherpa outdoors">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -2096,8 +2142,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Online-shopping/e.png" class="img-fluid"
-                                                        alt="mums store">
+                                                    <img src="assets/images/logo/Online-shopping/e.png"
+                                                        class="img-fluid" alt="mums store">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -2110,8 +2156,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Online-shopping/celebsathi.png" class="img-fluid"
-                                                        alt="Celebsathi">
+                                                    <img src="assets/images/logo/Online-shopping/celebsathi.png"
+                                                        class="img-fluid" alt="Celebsathi">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -2124,8 +2170,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Online-shopping/osmcakes.png" class="img-fluid"
-                                                        alt="osm">
+                                                    <img src="assets/images/logo/Online-shopping/osmcakes.png"
+                                                        class="img-fluid" alt="osm">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -2138,8 +2184,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Online-shopping/farmshop.png" class="img-fluid"
-                                                        alt="farmshop">
+                                                    <img src="assets/images/logo/Online-shopping/farmshop.png"
+                                                        class="img-fluid" alt="farmshop">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -2152,8 +2198,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Online-shopping/giftmandu.png" class="img-fluid"
-                                                        alt="giftmandu">
+                                                    <img src="assets/images/logo/Online-shopping/giftmandu.png"
+                                                        class="img-fluid" alt="giftmandu">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -2166,8 +2212,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Online-shopping/timelesstoday.png" class="img-fluid"
-                                                        alt="Timeless Today">
+                                                    <img src="assets/images/logo/Online-shopping/timelesstoday.png"
+                                                        class="img-fluid" alt="Timeless Today">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -2180,8 +2226,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Online-shopping/truebug.png" class="img-fluid"
-                                                        alt="truebug">
+                                                    <img src="assets/images/logo/Online-shopping/truebug.png"
+                                                        class="img-fluid" alt="truebug">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -2194,8 +2240,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Online-shopping/e.png" class="img-fluid"
-                                                        alt="Truenary">
+                                                    <img src="assets/images/logo/Online-shopping/e.png"
+                                                        class="img-fluid" alt="Truenary">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -2208,8 +2254,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Online-shopping/e.png" class="img-fluid"
-                                                        alt="noodle rex">
+                                                    <img src="assets/images/logo/Online-shopping/e.png"
+                                                        class="img-fluid" alt="noodle rex">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -2222,8 +2268,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Online-shopping/espotnepal.png" class="img-fluid"
-                                                        alt="espot">
+                                                    <img src="assets/images/logo/Online-shopping/espotnepal.png"
+                                                        class="img-fluid" alt="espot">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -2236,8 +2282,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Online-shopping/e.png" class="img-fluid"
-                                                        alt="varioyo">
+                                                    <img src="assets/images/logo/Online-shopping/e.png"
+                                                        class="img-fluid" alt="varioyo">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -2250,8 +2296,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Online-shopping/thuprai.png" class="img-fluid"
-                                                        alt="thuprai">
+                                                    <img src="assets/images/logo/Online-shopping/thuprai.png"
+                                                        class="img-fluid" alt="thuprai">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -2264,8 +2310,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Online-shopping/blushbeauty.png" class="img-fluid"
-                                                        alt="blush">
+                                                    <img src="assets/images/logo/Online-shopping/blushbeauty.png"
+                                                        class="img-fluid" alt="blush">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -2278,8 +2324,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Online-shopping/e.png" class="img-fluid"
-                                                        alt="zapp">
+                                                    <img src="assets/images/logo/Online-shopping/e.png"
+                                                        class="img-fluid" alt="zapp">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -2292,8 +2338,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Online-shopping/itti.png" class="img-fluid"
-                                                        alt="itti">
+                                                    <img src="assets/images/logo/Online-shopping/itti.png"
+                                                        class="img-fluid" alt="itti">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -2306,8 +2352,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Online-shopping/etutor.png" class="img-fluid"
-                                                        alt="etutor">
+                                                    <img src="assets/images/logo/Online-shopping/etutor.png"
+                                                        class="img-fluid" alt="etutor">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -2320,8 +2366,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Online-shopping/e.png" class="img-fluid"
-                                                        alt="aravind traders">
+                                                    <img src="assets/images/logo/Online-shopping/e.png"
+                                                        class="img-fluid" alt="aravind traders">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -2334,8 +2380,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Online-shopping/aquaworld.png" class="img-fluid"
-                                                        alt="aqua world">
+                                                    <img src="assets/images/logo/Online-shopping/aquaworld.png"
+                                                        class="img-fluid" alt="aqua world">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -2348,8 +2394,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Online-shopping/cowmandu.png" class="img-fluid"
-                                                        alt="cowmandu">
+                                                    <img src="assets/images/logo/Online-shopping/cowmandu.png"
+                                                        class="img-fluid" alt="cowmandu">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -2362,8 +2408,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Online-shopping/e.png" class="img-fluid"
-                                                        alt="kachhuwa">
+                                                    <img src="assets/images/logo/Online-shopping/e.png"
+                                                        class="img-fluid" alt="kachhuwa">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -2376,8 +2422,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/Online-shopping/analoguemall.png" class="img-fluid"
-                                                        alt="Analogue">
+                                                    <img src="assets/images/logo/Online-shopping/analoguemall.png"
+                                                        class="img-fluid" alt="Analogue">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -2414,8 +2460,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/food-n-hospitality/bhoj.png" class="img-fluid"
-                                                        alt="Bhoj Deals">
+                                                    <img src="assets/images/logo/food-n-hospitality/bhoj.png"
+                                                        class="img-fluid" alt="Bhoj Deals">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -2428,8 +2474,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/food-n-hospitality/foodmandu.png" class="img-fluid"
-                                                        alt="Foodmandu">
+                                                    <img src="assets/images/logo/food-n-hospitality/foodmandu.png"
+                                                        class="img-fluid" alt="Foodmandu">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -2442,8 +2488,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/food-n-hospitality/khaanpin.png" class="img-fluid"
-                                                        alt="Khaanpin">
+                                                    <img src="assets/images/logo/food-n-hospitality/khaanpin.png"
+                                                        class="img-fluid" alt="Khaanpin">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -2456,8 +2502,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/food-n-hospitality/wl.png" class="img-fluid"
-                                                        alt="WL Delivery">
+                                                    <img src="assets/images/logo/food-n-hospitality/wl.png"
+                                                        class="img-fluid" alt="WL Delivery">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -2470,8 +2516,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/food-n-hospitality/foodganj.png" class="img-fluid"
-                                                        alt="Foodganj">
+                                                    <img src="assets/images/logo/food-n-hospitality/foodganj.png"
+                                                        class="img-fluid" alt="Foodganj">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -2484,8 +2530,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/food-n-hospitality/biryanimoments.png" class="img-fluid"
-                                                        alt="biryanimoments">
+                                                    <img src="assets/images/logo/food-n-hospitality/biryanimoments.png"
+                                                        class="img-fluid" alt="biryanimoments">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -2498,8 +2544,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/food-n-hospitality/valleyexpress.png" class="img-fluid"
-                                                        alt="valleyexpress">
+                                                    <img src="assets/images/logo/food-n-hospitality/valleyexpress.png"
+                                                        class="img-fluid" alt="valleyexpress">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -2512,8 +2558,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/food-n-hospitality/piepickers.png" class="img-fluid"
-                                                        alt="piepickers">
+                                                    <img src="assets/images/logo/food-n-hospitality/piepickers.png"
+                                                        class="img-fluid" alt="piepickers">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -2526,8 +2572,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/food-n-hospitality/swissinternational.png" class="img-fluid"
-                                                        alt="swissinternational">
+                                                    <img src="assets/images/logo/food-n-hospitality/swissinternational.png"
+                                                        class="img-fluid" alt="swissinternational">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -2540,8 +2586,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/food-n-hospitality/biggiesburger.png" class="img-fluid"
-                                                        alt="biggiesburger">
+                                                    <img src="assets/images/logo/food-n-hospitality/biggiesburger.png"
+                                                        class="img-fluid" alt="biggiesburger">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -2554,8 +2600,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/food-n-hospitality/merokinmel.png" class="img-fluid"
-                                                        alt="merokinmel">
+                                                    <img src="assets/images/logo/food-n-hospitality/merokinmel.png"
+                                                        class="img-fluid" alt="merokinmel">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -2589,8 +2635,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/scan-n-pay/bigmart.png" class="img-fluid"
-                                                        alt="bluebook renewal">
+                                                    <img src="assets/images/logo/scan-n-pay/bigmart.png"
+                                                        class="img-fluid" alt="bluebook renewal">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -2603,8 +2649,8 @@
                                         <figure class="showcase-item">
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/scan-n-pay/farmshop.png" class="img-fluid"
-                                                        alt="bluebook renewal">
+                                                    <img src="assets/images/logo/scan-n-pay/farmshop.png"
+                                                        class="img-fluid" alt="bluebook renewal">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -2632,8 +2678,8 @@
                                             <div class="offer-tag"> 3% Cashback </div>
                                             <div class="fig-img">
                                                 <div class="fig-img-oval">
-                                                    <img src="assets/images/logo/scan-n-pay/atreya.png" class="img-fluid"
-                                                        alt="bluebook renewal">
+                                                    <img src="assets/images/logo/scan-n-pay/atreya.png"
+                                                        class="img-fluid" alt="bluebook renewal">
                                                 </div>
                                             </div>
                                             <figcaption class="caption">
@@ -2965,8 +3011,8 @@
                                             </li>
                                             <li>
                                                 <a target="_blank" href="#">
-                                                <img src="assets/images/footer/ISO.png"
-                                                    class="img-fluid" alt="" style="height: 35px;">
+                                                    <img src="assets/images/footer/ISO.png" class="img-fluid" alt=""
+                                                        style="height: 35px;">
                                                 </a>
                                             </li>
                                         </ul>
@@ -2975,13 +3021,17 @@
                                         <h5>Download Mobile Apps</h5>
                                         <ul class="d-flex">
                                             <li>
-                                                <a title="Play Store" target="_blank"  href="https://play.google.com/store/apps/details?id=com.f1soft.esewa&hl=en">
-                                                    <img src="assets/images/footer/img_google_play_badge.png" class="img-fluid" alt="playstore">
+                                                <a title="Play Store" target="_blank"
+                                                    href="https://play.google.com/store/apps/details?id=com.f1soft.esewa&hl=en">
+                                                    <img src="assets/images/footer/img_google_play_badge.png"
+                                                        class="img-fluid" alt="playstore">
                                                 </a>
                                             </li>
                                             <li>
-                                                <a title="App Store" target="_blank" href="https://itunes.apple.com/np/app/esewa/id614370939?mt=8">
-                                                    <img src="assets/images/footer/img_appstore_badge.png" class="img-fluid" alt="Appstore">
+                                                <a title="App Store" target="_blank"
+                                                    href="https://itunes.apple.com/np/app/esewa/id614370939?mt=8">
+                                                    <img src="assets/images/footer/img_appstore_badge.png"
+                                                        class="img-fluid" alt="Appstore">
                                                 </a>
                                             </li>
                                         </ul>
@@ -2991,7 +3041,8 @@
                                         <ul class="d-flex">
                                             <li>
                                                 <a target="_blank" href="http://www.f1soft.com/">
-                                                    <img src="assets/images/footer/f1-logo-new.png" class="img-fluid" alt="f1soft">
+                                                    <img src="assets/images/footer/f1-logo-new.png" class="img-fluid"
+                                                        alt="f1soft">
                                                 </a>
                                             </li>
                                         </ul>
@@ -3005,7 +3056,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-xs-7 col-md-6">
-                                "© 2009-"
+                                © 2009-
                                 <span id="currentYear">2022</span>
                                 eSewa. All Rights Reserved.
                             </div>
@@ -3016,16 +3067,21 @@
                                     </div>
                                     <ul class="social-media-icon mb-0">
                                         <li>
-                                            <a title="Facebook" href="https://www.facebook.com/esewa/" class="fa fa-facebook-square"></a>
+                                            <a title="Facebook" href="https://www.facebook.com/esewa/"
+                                                class="fa fa-facebook-square"></a>
                                         </li>
                                         <li>
-                                            <a title="Twitter" href="https://twitter.com/esewanepal" class="fa fa-twitter-square"></a>
+                                            <a title="Twitter" href="https://twitter.com/esewanepal"
+                                                class="fa fa-twitter-square"></a>
                                         </li>
                                         <li>
-                                            <a title="Youtube" href="https://www.youtube.com/c/eSewaFonepay?sub_confirmation=1" class="fa fa-youtube-square"></a>
+                                            <a title="Youtube"
+                                                href="https://www.youtube.com/c/eSewaFonepay?sub_confirmation=1"
+                                                class="fa fa-youtube-square"></a>
                                         </li>
                                         <li>
-                                            <a title="Linkedin" href="https://www.linkedin.com/company-beta/2832447/" class="fa fa-linkedin-square"></a>
+                                            <a title="Linkedin" href="https://www.linkedin.com/company-beta/2832447/"
+                                                class="fa fa-linkedin-square"></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -3043,6 +3099,8 @@
 
             </div>
         </section>
+
+
 
     </div>
 </body>
